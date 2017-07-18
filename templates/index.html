@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>VGG16 Image Classification</title>
+	  <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+
+</head>
+<body>
+
+	<h1><span>Classification of Images with Resnet Model</span></h1>
+
+	<form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+		<div style ="margin-top:15px;">
+		      <p><h4><span style="color:black"> Upload your image below </span></h4></p>
+		    </div>
+    <div id = a , style="margin-top:45px;">
+			<input type=file name = photo accept="image/*" onchange="loadFile(event)">
+			<center><img id="output" align = middle STYLE="TOP:260px;WIDTH:350px; HEIGHT:350px"/></center>
+      <script>
+        var loadFile = function(event) {
+        var output = document.getElementById('output');
+        output.src = URL.createObjectURL(event.target.files[0]);
+        };
+     </script>
+		</div>
+
+    <div id = b , style="margin-top:45px;">
+			<input type="submit">
+		</div>
+
+</form>
+</body>
+</html>

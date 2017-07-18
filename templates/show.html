@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>VGG16 Image Classification</title>
+	  <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+
+</head>
+<body>
+
+	<h1><span>Classification of Images with VGG16 model</span></h1>
+
+	<form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+
+    <div id = a , style="margin-left:465px; margin-top:65px; float:left; position:absolute;">
+			<input type=file name = photo >
+			<img id="output" STYLE="position:absolute; TOP:160px; LEFT:87px; WIDTH:200px; HEIGHT:200px" src = url/>
+
+		</div>
+
+    
+</form>
+</body>
+</html>
