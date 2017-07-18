@@ -6,4 +6,4 @@
 4) Run python app.py
 
 
-You can view the app here - 
+You can view the app here - https://vgg16.herokuapp.com/ 
