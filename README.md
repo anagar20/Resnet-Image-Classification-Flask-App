@@ -4,3 +4,6 @@
 2) In Terminal, cd to the folder where you have the repository downloaded
 3) Run pip install requirements.txt
 4) Run python app.py
+
+
+You can view the app here - 
